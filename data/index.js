@@ -13,7 +13,7 @@ export const DUMMY_PRODUCT_DATA = [
     name: 'FIFA 20',
     description: 'The most hard FIFA ever',
     category: {
-      $oid: '5f15d5cdcb4a6642bddc0fe9',
+      $oid: '5f15d5cdcb4a6642bddc0fzz',
     },
     countInStock: 25,
     __v: 0,
@@ -89,6 +89,58 @@ export const DUMMY_PRODUCT_DATA = [
       $oid: '5f15d5b2cb4a6642bddc0fe7',
     },
     countInStock: 2,
+    __v: 0,
+  },
+];
+
+export const DUMMY_CATEGORIES_DATA = [
+  {
+    _id: {
+      $oid: '99f78d5cdcb4a6642bddc0fe9',
+    },
+    name: 'All',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '5f15d5cdcb4a6642bddc0fe9',
+    },
+    name: 'Electronics',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '5f15d545f3a046427a1c26e2',
+    },
+    name: 'Beauty',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '5f15d54cf3a046427a1c26e3',
+    },
+    name: 'Computers',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '5f15d5b2cb4a6642bddc0fe7',
+    },
+    name: 'Home',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '5f15d5b7cb4a6642bddc0fe8',
+    },
+    name: 'Garden',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '5f15d5cdcb4a6642bddc0fzz',
+    },
+    name: 'Games',
     __v: 0,
   },
 ];

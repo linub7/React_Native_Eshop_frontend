@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import {
   StyleSheet,
   View,
@@ -11,9 +12,17 @@ import {
 
 const { width } = Dimensions.get('window');
 
-const ProductListItem = ({ name, price, image, countInStock }) => {
+const ProductListItem = ({ _id, name, price, image, countInStock }) => {
+  const navigation = useNavigation();
+
+  const handleNavigateToSingleProductScreen = () => {
+    navigation.navigate('SingleProduct', { productId: _id });
+  };
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity
+      style={styles.container}
+      onPress={handleNavigateToSingleProductScreen}
+    >
       <Image
         source={{
           uri: image
